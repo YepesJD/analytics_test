@@ -1,0 +1,23 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.App > div {
+  border: 1px solid red;
+
+  & > div {
+    background: blue;
+
+    & > div {
+      background: green;
+    }
+  }
+}
+
+.App > div > div {
+  background: gray;
+}
+
